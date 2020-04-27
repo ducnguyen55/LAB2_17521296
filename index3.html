@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+	<div class="calculator">
+		<form>
+			<table>
+				<tr>
+					<td colspan="4">
+				        <input type="text" id="result" class="display">
+				    </td>
+			    </tr>
+			    <tr>
+				    <td><input type="button" name="one" value="1" onclick="result.value += this.value"></td>
+				    <td><input type="button" name="two" value="2" onclick="result.value += this.value"></td>
+				    <td><input type="button" name="three" value="3" onclick="result.value += this.value"></td>
+				    <td><input type="button" class="operator" name="plus" value="+" onclick="result.value += '+'"></td>
+			    </tr>
+			    <tr>
+			      	<td><input type="button" name="four" value="4" onclick="result.value += this.value"></td>
+			      	<td><input type="button" name="five" value="5" onclick="result.value += this.value"></td>
+			      	<td><input type="button" name="six" value="6" onclick="result.value += this.value"></td>
+			      	<td><input type="button" class="operator" name="minus" value="-" onclick="result.value += '-'"></td>
+			    </tr>
+			    <tr>
+				    <td><input type="button" name="seven" value="7" onclick="result.value += this.value"></td>
+				    <td><input type="button" name="eight" value="8" onclick="result.value += this.value"></td>
+				    <td><input type="button" name="nine" value="9" onclick="result.value += this.value"></td>
+				    <td><input type="button" class="operator" name="times" value="x" onclick="result.value += '*'"></td>
+			    </tr>
+			    <tr>
+			      	<td><input type="button" class="operator" id="clear" name="clear" value="C" onclick="result.value = ''"></td>
+			      	<td><input type="button" class="operator" name="zero" value="0" onclick="result.value += this.value"></td>
+			      	<td><input type="button" class="operator" name="doit" value="=" onclick="result.value = eval(result.value)"></td>
+			      	<td><input type="button" class="operator" name="div" value="/" onclick="result.value += '/'"></td>
+			    </tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

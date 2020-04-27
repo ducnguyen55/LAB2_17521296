@@ -1,0 +1,21 @@
+*{	
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	display: block;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	margin: 20% auto auto auto;
+}
+
+body a{
+	margin: 10%;
+	padding: 4%;
+	border: solid;
+	font-size: 20px;
+	border-color: #000;
+	background: #ADDAF1;
+}

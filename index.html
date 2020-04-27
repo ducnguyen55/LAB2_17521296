@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng nhập</title>
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js.js" async></script>
+</head>
+<body>
+	<div>
+		<div class="login-page" id="login">
+			<h1>Đăng nhập tài khoảng</h1>
+			<div class="input-box">
+				<i class="fas fa-user">  </i>
+			<input type="text" placeholder="Username" name="username" id="user">
+			</div>
+			<div class="input-box">
+				<i class="fas fa-key"></i>
+				<input type="password" placeholder="Password" id="pwd">
+				<span class="eye" id="eyeicon">
+					<i class="fas fa-eye" id="hide-eye"></i>
+					<i class="fas fa-eye-slash" id="hide-eye-slash"></i>
+				</span>
+			</div>
+			<button type="button" class="login-button" onclick="loginClick()">Đăng nhập</button>
+		</div>
+		<div class="login-page" id="hello">
+			<h3>Xin chào</h3>
+			<h1 id="user-name">Tên đăng nhập</h1>
+			<p><<a href="#" onclick="logoutClick()">Đăng xuất</a></p>
+		</div>
+	</div>
+</body>
+</html>
